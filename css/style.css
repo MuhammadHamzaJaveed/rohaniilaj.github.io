@@ -220,6 +220,7 @@
 	color: white;
 	position: fixed;
 	bottom: 50px;
+    z-index: 99;
 	left: 35px;
 	font-size: 40px;
 	display: flex;
@@ -238,6 +239,7 @@
 .btnn-whatsapp-pulse {
 	background: #25d366;
 	color: white;
+    z-index: 99;
 	position: fixed;
 	bottom: 100px;
 	right: 35px;
