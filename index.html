@@ -35,6 +35,28 @@
 </head>
 
 <body class="">
+
+
+
+    <!-- opening modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog" >
+            <div class="modal-content" style="height: 500px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Video Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <!-- Embed a YouTube video -->
+                    <iframe class="w-100 h-100"  src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Modal-->
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -683,6 +705,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var myModal = new bootstrap.Modal(document.getElementById("myModal"), {
+                backdrop: "static",
+                keyboard: false
+            });
+            myModal.show();
+        });
+    </script>
 </body>
 
 </html>
