@@ -5,6 +5,9 @@
     --light: #F1F3FA;
     --dark: #1C2035;
 }
+h2{
+    font-size: 32px;
+}
 
 .back-to-top {
     position: fixed;
